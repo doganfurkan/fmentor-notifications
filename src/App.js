@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   const markRead = () => {
-    Array.from(document.getElementsByClassName("unread")).map((item, index) => {
+    Array.from(document.getElementsByClassName("unread")).forEach((item, index) => {
       setTimeout(() => {
         item.classList.remove("unread");
         item.classList.add("marked");
@@ -46,18 +46,18 @@ function App() {
               </div>
               <div className="notification-content">
                 <div className="notification-header">
-                  <a href="/" className="accountName">
+                  <span className="accountName">
                     {myNot.account}
-                  </a>{" "}
+                  </span>{" "}
                   <span>{myNot.didWhat}</span>
                   {myNot.toWhat ? (
-                    <a href="/"
+                    <span
                       className={`toWhat ${
                         myNot.type === "group" ? "group" : "notGroup"
                       }`}
                     >
                       {" " + myNot.toWhat}
-                    </a>
+                    </span>
                   ) : (
                     ""
                   )}
