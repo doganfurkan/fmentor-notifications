@@ -46,12 +46,12 @@ function App() {
               </div>
               <div className="notification-content">
                 <div className="notification-header">
-                  <a className="accountName">
+                  <a href="/" className="accountName">
                     {myNot.account}
                   </a>{" "}
                   <span>{myNot.didWhat}</span>
                   {myNot.toWhat ? (
-                    <a
+                    <a href="/"
                       className={`toWhat ${
                         myNot.type === "group" ? "group" : "notGroup"
                       }`}
