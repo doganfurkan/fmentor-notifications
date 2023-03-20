@@ -26,8 +26,8 @@ function App() {
   };
 
   return (
-    <section>
-      <header>
+    <main>
+      <div id="header">
         <h1>
           Notifications{" "}
           <span id="badge" className={unread <= 0 ? "hidden" : ""}>
@@ -35,7 +35,7 @@ function App() {
           </span>
         </h1>{" "}
         <button onClick={() => markRead()}>Mark all as read</button>
-      </header>
+      </div>
       <div id="main">
         {nots.map((myNot, index) => {
           return (
@@ -97,7 +97,7 @@ function App() {
           );
         })}
       </div>
-    </section>
+    </main>
   );
 }
 
