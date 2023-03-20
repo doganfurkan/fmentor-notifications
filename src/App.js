@@ -36,7 +36,7 @@ function App() {
         </h1>{" "}
         <button onClick={() => markRead()}>Mark all as read</button>
       </header>
-      <main>
+      <div id="main">
         {nots.map((myNot, index) => {
           return (
             <div
@@ -96,7 +96,7 @@ function App() {
             </div>
           );
         })}
-      </main>
+      </div>
     </section>
   );
 }
