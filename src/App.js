@@ -41,6 +41,13 @@ function App() {
           return (
             <div
               key={index}
+              onClick={(e) => {
+                if(e.currentTarget.classList.contains("unread")){
+                  setUnread(unread - 1);
+                  e.currentTarget.classList.remove("unread")
+                  e.currentTarget.classList.add("marked")
+                };
+              }}
               className={`notification ${myNot.read ? "" : "unread"}`}
             >
               <div className="profile-img">
@@ -49,7 +56,12 @@ function App() {
               <div className="notification-content">
                 <div className="notification-header">
                   {myNot.accountLink ? (
-                    <a target="_blank" rel="noreferrer" className="accountName" href={myNot.accountLink}>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="accountName"
+                      href={myNot.accountLink}
+                    >
                       {myNot.account}
                     </a>
                   ) : (
@@ -58,7 +70,9 @@ function App() {
                   <span>{myNot.didWhat}</span>
                   {myNot.toWhat ? (
                     myNot.toWhatLink ? (
-                      <a target="_blank" rel="noreferrer"
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
                         href={myNot.toWhatLink}
                         className={`toWhat ${
                           myNot.type === "group" ? "group" : "notGroup"
