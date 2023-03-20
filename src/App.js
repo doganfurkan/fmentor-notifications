@@ -14,13 +14,15 @@ function App() {
   }, []);
 
   const markRead = () => {
-    Array.from(document.getElementsByClassName("unread")).forEach((item, index) => {
-      setTimeout(() => {
-        item.classList.remove("unread");
-        item.classList.add("marked");
-        setUnread(unread - index - 1);
-      }, index * 500);
-    });
+    Array.from(document.getElementsByClassName("unread")).forEach(
+      (item, index) => {
+        setTimeout(() => {
+          item.classList.remove("unread");
+          item.classList.add("marked");
+          setUnread(unread - index - 1);
+        }, index * 500);
+      }
+    );
   };
 
   return (
@@ -46,18 +48,33 @@ function App() {
               </div>
               <div className="notification-content">
                 <div className="notification-header">
-                  <span className="accountName">
-                    {myNot.account}
-                  </span>{" "}
+                  {myNot.accountLink ? (
+                    <a target="_blank" rel="noreferrer" className="accountName" href={myNot.accountLink}>
+                      {myNot.account}
+                    </a>
+                  ) : (
+                    <span className="accountName">{myNot.account}</span>
+                  )}{" "}
                   <span>{myNot.didWhat}</span>
                   {myNot.toWhat ? (
-                    <span
-                      className={`toWhat ${
-                        myNot.type === "group" ? "group" : "notGroup"
-                      }`}
-                    >
-                      {" " + myNot.toWhat}
-                    </span>
+                    myNot.toWhatLink ? (
+                      <a target="_blank" rel="noreferrer"
+                        href={myNot.toWhatLink}
+                        className={`toWhat ${
+                          myNot.type === "group" ? "group" : "notGroup"
+                        }`}
+                      >
+                        {" " + myNot.toWhat}
+                      </a>
+                    ) : (
+                      <span
+                        className={`toWhat ${
+                          myNot.type === "group" ? "group" : "notGroup"
+                        }`}
+                      >
+                        {" " + myNot.toWhat}
+                      </span>
+                    )
                   ) : (
                     ""
                   )}

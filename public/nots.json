@@ -1,67 +1,78 @@
 [
-        {
-            "account": "Mark Webber",
-            "profilePicture":"./images/avatar-mark-webber.webp",
-            "type": "post-reaction",
-            "didWhat": "reacted to your recent post",
-            "toWhat": "My first tournament today!",
-            "time":"1m",
-            "read": false
-        },
-        {
-            "account": "Angela Gray",
-            "profilePicture":"./images/avatar-angela-gray.webp",
-            "type": "follow",
-            "didWhat": "followed you",
-            "toWhat": "",
-            "time":"5m",
-            "read": false
-        },
-        {
-            "account": "Jacob Thompson",
-            "profilePicture":"./images/avatar-jacob-thompson.webp",
-            "type": "group",
-            "didWhat": "has joined your group",
-            "toWhat": "Chess Club",
-            "time":"1 day",
-            "read": false
-        },
-        {
-            "account": "Rizky Hasanuddin",
-            "profilePicture":"./images/avatar-rizky-hasanuddin.webp",
-            "type": "message",
-            "didWhat": "sent you a private message",
-            "message":"Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
-            "toWhat": "",
-            "time":"5 days",
-            "read": true
-        },
-        {
-            "account": "Kimberly Smith",
-            "profilePicture":"./images/avatar-kimberly-smith.webp",
-            "type": "comment",
-            "didWhat": "commented on your picture",
-            "toWhat": "",
-            "time":"1 week",
-            "commentedTo":"./images/image-chess.webp",
-            "read": true
-        },
-        {
-            "account": "Nathan Peterson",
-            "profilePicture":"./images/avatar-nathan-peterson.webp",
-            "type": "post-reaction",
-            "didWhat": "reacted to your recent post",
-            "toWhat": "5 end-game strategies to increase your win rate",
-            "time":"2 weeks",
-            "read": true
-        },
-        {
-            "account": "Anna Kim",
-            "profilePicture":"./images/avatar-anna-kim.webp",
-            "type": "group",
-            "didWhat": "left the group",
-            "toWhat": "Chess Club",
-            "time":"2 weeks",
-            "read": true
-        }
-    ]
+  {
+    "account": "Furkan Doğan",
+    "accountLink":"https://github.com/doganfurkan",
+    "profilePicture": "./images/yurek.webp",
+    "type": "love",
+    "didWhat": "made this page for",
+    "toWhat": "Frontend Mentor",
+    "toWhatLink":"https://www.frontendmentor.io/profile/doganfurkan",
+    "time": "1m",
+    "read": false
+  },
+  {
+    "account": "Mark Webber",
+    "profilePicture": "./images/avatar-mark-webber.webp",
+    "type": "post-reaction",
+    "didWhat": "reacted to your recent post",
+    "toWhat": "My first tournament today!",
+    "time": "2m",
+    "read": false
+  },
+  {
+    "account": "Angela Gray",
+    "profilePicture": "./images/avatar-angela-gray.webp",
+    "type": "follow",
+    "didWhat": "followed you",
+    "toWhat": "",
+    "time": "5m",
+    "read": false
+  },
+  {
+    "account": "Jacob Thompson",
+    "profilePicture": "./images/avatar-jacob-thompson.webp",
+    "type": "group",
+    "didWhat": "has joined your group",
+    "toWhat": "Chess Club",
+    "time": "1 day",
+    "read": false
+  },
+  {
+    "account": "Rizky Hasanuddin",
+    "profilePicture": "./images/avatar-rizky-hasanuddin.webp",
+    "type": "message",
+    "didWhat": "sent you a private message",
+    "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+    "toWhat": "",
+    "time": "5 days",
+    "read": true
+  },
+  {
+    "account": "Kimberly Smith",
+    "profilePicture": "./images/avatar-kimberly-smith.webp",
+    "type": "comment",
+    "didWhat": "commented on your picture",
+    "toWhat": "",
+    "time": "1 week",
+    "commentedTo": "./images/image-chess.webp",
+    "read": true
+  },
+  {
+    "account": "Nathan Peterson",
+    "profilePicture": "./images/avatar-nathan-peterson.webp",
+    "type": "post-reaction",
+    "didWhat": "reacted to your recent post",
+    "toWhat": "5 end-game strategies to increase your win rate",
+    "time": "2 weeks",
+    "read": true
+  },
+  {
+    "account": "Anna Kim",
+    "profilePicture": "./images/avatar-anna-kim.webp",
+    "type": "group",
+    "didWhat": "left the group",
+    "toWhat": "Chess Club",
+    "time": "2 weeks",
+    "read": true
+  }
+]
